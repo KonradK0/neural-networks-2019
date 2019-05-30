@@ -3,3 +3,6 @@ data/
 processed/
 raw/
 cifar-10*
+*.pyc
+__pycache__/
+utils/__pycache__/

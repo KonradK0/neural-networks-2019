@@ -8,7 +8,7 @@ def load_mnist(train=True, shrinkage=None):
         root='.',
         download=True,
         train=train,
-        transform=Compose([ToTensor(), Lambda(lambda x: x.flatten())])
+        transform=Compose([ToTensor(), Lambda(torch.flatten)])
     )
     if shrinkage:
         dataset_size = len(dataset)
